@@ -1,0 +1,23 @@
+{
+  "name": "player-migrator",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "player-migrator": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc --project ./tsconfig.build.json",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "leveldb-zlib": "^1.2.0",
+    "nbtify": "^1.90.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3"
+  }
+}
