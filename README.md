@@ -4,6 +4,15 @@ Started working the last day or so on making a tool to copy inventories between 
 
 This requires the installation of Node.js, as well as `npm`, which comes with the install.
 
+If you are using Git to clone the project, you can install it like this:
+
+```sh
+git clone https://github.com/Offroaders123/Player-Migrator --recurse-submodules
+cd ./Player-Migrator/
+npm install
+npm link
+```
+
 ```sh
 # Logs the players in this world.
 player-migrator ./minecraftWorlds/DbKdZWg+AAA=
