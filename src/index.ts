@@ -1,7 +1,9 @@
+#!/usr/bin/env node
+
 import { LevelDB } from "leveldb-zlib";
 import { Int16, NBTData, read, write } from "nbtify";
 import { join } from "node:path";
-import { Player } from "../Region-Types/src/bedrock/index.js";
+import { Player } from "../Region-Types/dist/bedrock/index.js";
 
 process.on("uncaughtException",error => {
   console.error(`${error}`);

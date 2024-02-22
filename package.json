@@ -1,14 +1,14 @@
 {
   "name": "player-migrator",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "bin": {
     "player-migrator": "dist/index.js"
   },
   "scripts": {
+    "prepare": "cd ./Region-Types; npm ci; npm run build; cd ../; npm run build",
     "build": "tsc --project ./tsconfig.build.json",
     "dev": "tsc --watch"
   },
